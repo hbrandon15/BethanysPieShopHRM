@@ -15,6 +15,13 @@ namespace BethanysPieShopHRM
             double ratePerHour = 12.34;
             int numberOfHoursWorked = 165;
 
+            long veryLongMonth = numberOfHoursWorked;
+            double d = 123456789.0;
+
+            int x = (int)d;
+
+            int intVeryLongMonth = (int)veryLongMonth;
+
             double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
 
             Console.WriteLine(currentMonthWage);
@@ -57,6 +64,9 @@ namespace BethanysPieShopHRM
 
             Console.WriteLine(startHour.ToLongDateString());
             Console.WriteLine(endHour.ToShortTimeString());
+
+
+
 
             Console.ReadLine();
         }
