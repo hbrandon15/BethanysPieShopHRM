@@ -1,0 +1,16 @@
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.exe
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.deps.json
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.runtimeconfig.json
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.runtimeconfig.dev.json
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.dll
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\bin\Debug\net5.0\BethanysPieShopHRM.pdb
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.csproj.AssemblyReference.cache
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.AssemblyInfoInputs.cache
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.AssemblyInfo.cs
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.csproj.CoreCompileInputs.cache
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.dll
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\refint\BethanysPieShopHRM.dll
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.pdb
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\BethanysPieShopHRM.genruntimeconfig.cache
+C:\Users\h_bra\source\repos\BethanysPieShopHRM\obj\Debug\net5.0\ref\BethanysPieShopHRM.dll
