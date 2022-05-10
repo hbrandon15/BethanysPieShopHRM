@@ -6,11 +6,11 @@ namespace BethanysPieShopHRM
     {
         static void Main(string[] args)
         {
-            int monthlyWage = 1234;
+            var monthlyWage = 1234;
             int months = 12, bonus = 1000;
 
-            bool isActive = true;
-            double rating = 99.25;
+            var isActive = true;
+            var rating = 99.25;
 
             double ratePerHour = 12.34;
             int numberOfHoursWorked = 165;
