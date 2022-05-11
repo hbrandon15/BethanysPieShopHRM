@@ -6,56 +6,79 @@ namespace BethanysPieShopHRM
     {
         static void Main(string[] args)
         {
-            //int monthlyWage = 1234;
-            //int months = 12;
-            //int bonus = 1000; 
+            //usingEnumerations();
+            UsingAStruct();
 
-            ////int yearlyWage = CalculateYearlyWage(monthlyWage, months, bonus);
-            ////Console.WriteLine($"Yearly wage (from main): {yearlyWage}");
-            //double monthlyWageDouble = 1234;
-            //double monthsDouble = 12;
-            //double bonusDouble = 1000;
-
-            //double yearlyWageWithBonusDouble = CalculateYearlyWage(monthlyWageDouble, monthsDouble, bonusDouble);
-
-            UsingOutParameters(); 
             Console.ReadLine();
         }
 
-        private static void UsingOutParameters()
+        private static void UsingAStruct()
         {
-            int monthlyWage1 = 1234;
-            int months1 = 12;
-            int bonus; // notice there is no intial value
-
-            int yearlyWageForEmployee1 = CalculateYearlyWageWithOut(monthlyWage1, months1, out bonus);
-            Console.WriteLine($"Yearly wage for employee 1 (Bethany):  {yearlyWageForEmployee1}");
-            Console.WriteLine($"Bethany received a bonus of {bonus}");
+            Employee employee;
+            employee.Name = "Bethany";
+            employee.Wage = 1250;
+            employee.Work();
         }
 
-        private static int CalculateYearlyWageWithOut(int monthlyWage, int numberOfMonthsWorked, out int bonus)
+        private static void usingEnumerations()
         {
-            bonus = new Random().Next(1000); // C# code to generate a random number smaller than 1000
-            if (bonus < 500)
+            EmployeeType employeeType = EmployeeType.Manager;
+            StoreType storeType = StoreType.Seating;
+            int baseWage = 1000;
+
+            CalculateWage(baseWage, employeeType, storeType);
+        }
+
+        private static void CalculateWage(int baseWage, EmployeeType employeeType, StoreType storeType)
+        {
+            int calculatedWage = 0;
+
+            if(employeeType == EmployeeType.Manager)
             {
-                bonus *= 2;
-                Console.WriteLine("Bonus doubled! Yay!!");
+                calculatedWage = baseWage * 3;
+            }
+            else
+            {
+                calculatedWage *= 2; 
             }
 
-            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
-            return monthlyWage * numberOfMonthsWorked + bonus; 
+            if (storeType == StoreType.FullPieRestaurant) //Larger retail point so give a bonus
+                calculatedWage += 500;
+
+
+            Console.WriteLine($"The calculated wage is {calculatedWage}");
+
+            
         }
 
-        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
-        {
-            //Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
-            return monthlyWage * numberOfMonthsWorked;
-        }
+    }
 
-        public static double CalculateYearlyWage(double monthlyWage, double numberOfMonthsWorked, double bonus)
+    struct Employee
+    {
+        public string Name;
+        public int Wage; 
+
+
+        public void Work()
         {
-            Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked + bonus}");
-            return monthlyWage * numberOfMonthsWorked + bonus;
+            Console.WriteLine($"{Name} is now doing work!");
         }
+    }
+
+    enum EmployeeType
+    {
+        Sales, //0
+        Manager, //1
+        Research, //2
+        StoreManager //3
+    }
+
+    enum StoreType
+    {
+        PieCorner = 10, 
+        Seating = 20, 
+        FullPieRestaurant = 100, 
+        Undefined = 99
+
     }
 }
