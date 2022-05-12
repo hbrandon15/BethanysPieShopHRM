@@ -13,13 +13,8 @@ namespace BethanysPieShopHRM
 
             Employee george = new Employee("George", "Jones", "george@snowball.be", new DateTime(1984, 3, 28), EmployeeType.Research, 25);
 
-            Employee testEmployee = bethany;
-            testEmployee.firstName = "Gill";
-            testEmployee.DisplayEmployeeDetails();
-            bethany.DisplayEmployeeDetails();
+            bethany.HourlyRate = 50; 
 
-            bethany.firstName = "John";
-            bethany.hourlyRate = 10;
 
             bethany.DisplayEmployeeDetails();
             bethany.PerformWork();
